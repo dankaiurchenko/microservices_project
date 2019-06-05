@@ -1,0 +1,18 @@
+version: '2.1'
+services:
+
+  config:
+    build: config
+
+  registry:
+    build: registry
+
+  gateway:
+    build: gateway
+    ports:
+      - 8080:8080
+
+  rest-api:
+    build: rest-api
+    ports:
+      - 8081:8081

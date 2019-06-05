@@ -1,0 +1,49 @@
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+
+zuul:
+  prefix: /index.php
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+  routes:
+    rest-api:
+        path: /**
+        serviceId: rest-api
+
+server:
+  port: 4000
+  servlet:
+    context-path : /api
+
+
+
+security:
+  app:
+    jwtSecret: bogdanassss-secret
+    jwtExpiration: 86400
+
+
+spring:
+  jpa:
+    database-platform=org: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  datasource:
+    initialization-mode: always
+    platform : postgres
+    url: jdbc:postgresql://postgres:5432/${POSTGRES_DATABASE}
+    username: postgres
+    password: ${POSTGRES_PASSWORD}
+
+
+

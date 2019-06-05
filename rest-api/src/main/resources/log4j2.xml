@@ -31,7 +31,7 @@
             <AppenderRef ref="ConsoleAppender"/>
         </Logger>
 
-        <Root level="debug">
+        <Root level="warn">
             <AppenderRef ref="ConsoleAppender"/>
             <AppenderRef ref="FileAppender" level="error"/>
         </Root>

@@ -9,6 +9,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "students_courses", schema = "public", catalog = "my_servlet_project")
 public class StudentsCourse {
     @Id

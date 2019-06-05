@@ -11,6 +11,7 @@ import java.util.Date;
 @Data
 @Entity
 @AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "users", schema = "public", catalog = "my_servlet_project")
 public class User {
     @Id

@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class DtoMark {
     private Integer id;
     private Integer studentId;

@@ -1,7 +1,6 @@
 logging:
   level:
-    org.springframework.security: INFO
-
+    root : WARN
 
 eureka:
   instance:

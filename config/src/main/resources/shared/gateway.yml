@@ -45,5 +45,3 @@ spring:
     username: postgres
     password: ${POSTGRES_PASSWORD}
 
-
-
